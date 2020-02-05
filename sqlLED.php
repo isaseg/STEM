@@ -54,9 +54,11 @@
 				var xmlhttp = new XMLHttpRequest();
 				if (statea == 0) {
 					statea = 1;
+					document.getElementById('status').innerHTML = "The LED is on";
 				}
 				else if (statea == 1) {
 					statea = 0;
+					document.getElementById('status').innerHTML = "The LED is off";
 				}
 				xmlhttp.open("GET", "buttonLED.php?turnOnOff=" + statea, true);
 				xmlhttp.send();
@@ -65,5 +67,6 @@
 	</head>
 	<body>
 		<button onclick="switchLED()">Turn LED On/Off</button>
+		<h1 id="status"></h1>
 	</body>
 </html>
