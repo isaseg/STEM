@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$username = "User";
+$username = "user";
 $password = "password";
 $dbname = "school";
 
@@ -9,15 +9,15 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Connection died: " . $conn->connect_error);
 }
-echo "Connected successfully"."<br>";
+echo "Connection success"."<br>";
 
 $sql = "UPDATE students SET age = 17 WHERE name = 'Kaiki' ";
 $result = $conn->query($sql);
 
 if ($conn->query($sql) === TRUE) {
-    echo "Record updated successfully";
+    echo "Record updated";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
