@@ -1,7 +1,7 @@
 <?php
 //User credentials
 $servername = "localhost";
-$username = "User";
+$username = "user";
 $password = "password";
 $dbname = "school";
 
