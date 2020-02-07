@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "api";
-$password = "f103";
-$dbname = "people";
+$username = "User";
+$password = "password";
+$dbname = "school";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 echo "Connected successfully"."<br>";
 
-$sql = "UPDATE students SET age = 18 WHERE name = 'Isaac' ";
+$sql = "UPDATE students SET age = 17 WHERE name = 'Kaiki' ";
 $result = $conn->query($sql);
 
 if ($conn->query($sql) === TRUE) {
