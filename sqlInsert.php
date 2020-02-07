@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "api";
-$password = "f103";
-$dbname = "people";
+$username = "User";
+$password = "password";
+$dbname = "school";
 $name = 'Aaron';
 $age = 17;
 $gradeLevel = 11;
